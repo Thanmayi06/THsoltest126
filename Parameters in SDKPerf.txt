@@ -1,0 +1,18 @@
+SolAdmin Parameters in SDKPerf : Client Control
+
+a. Retry Count
+b. Retry Interval
+c. Keep Alive Interval
+d. Connect Timeout 
+
+In the context of SolAdmin parameters in SDKPerf's Client Control, the following parameters are relevant:
+
+a. Retry Count: This parameter specifies the number of times SDKPerf will attempt to reconnect to the messaging server if the initial connection fails or is lost. If the connection is not established within the specified number of retries, SDKPerf will terminate.
+
+b. Retry Interval: This parameter determines the time interval, in milliseconds, between each retry attempt when SDKPerf is trying to reconnect to the messaging server. It defines the duration to wait before attempting a connection again after a failed attempt.
+
+c. Keep Alive Interval: This parameter sets the interval, in seconds, at which SDKPerf sends keep-alive messages to the messaging server to maintain the connection. These keep-alive messages help ensure that the connection remains active and prevents it from timing out or being terminated due to inactivity.
+
+d. Connect Timeout: This parameter defines the maximum time, in milliseconds, that SDKPerf will wait for a connection to be established with the messaging server. If the connection cannot be established within this timeout period, SDKPerf will abort the connection attempt.
+
+These parameters help control and manage the behavior of the client connection in SDKPerf, providing flexibility and customization options for connection establishment, reconnection, and maintaining the connection's stability.

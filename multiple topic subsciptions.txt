@@ -1,0 +1,7 @@
+For a Queue, there can be multiple topic subscriptions :: Which topic subscription is sending which message:: Is it possible to determine that?
+
+In Solace, when multiple topic subscriptions are associated with a queue, it is not possible to directly determine which specific topic subscription sent a particular message. 
+
+When a message is published to a topic, it can be routed to multiple subscribers based on their topic subscriptions. The messaging system delivers the message to the associated queues of all subscribers matching the message's topic. However, once the message is enqueued in a queue, it does not retain information about which specific topic subscription led to its arrival in the queue.
+
+If you require such detailed tracking or correlation between messages and their specific topic subscriptions, you may need to implement custom logic within your application or message processing pipeline. For example, you could include additional metadata or message properties to indicate the source topic subscription or any other relevant information that you need to associate with the message.
