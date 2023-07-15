@@ -1,0 +1,32 @@
+ commands used for queue configuration in Solace:
+
+Create a Queue:
+create queue <queue-name>
+
+Delete a Queue:
+delete queue <queue-name>
+
+Set Maximum Message Spool Usage:
+queue <queue-name> max-spool-usage <size>
+
+Set Maximum Message Spool Size (in bytes):
+queue <queue-name> max-spool-size <size-in-bytes>
+
+Set Maximum Message Size (in bytes):
+queue <queue-name> max-message-size <size-in-bytes>
+
+Enable/Disable Queue Access:
+queue <queue-name> access-type <read | write | delete> <enabled | disabled>
+
+Set Queue Permissions (ACL Profile):
+queue <queue-name> permission acl-profile <acl-profile-name>
+
+Set Queue Quota (Message Count):
+queue <queue-name> quota <message-count>
+
+Set Queue Quota (Size in bytes):
+queue <queue-name> quota-size <size-in-bytes>
+
+
+
+
